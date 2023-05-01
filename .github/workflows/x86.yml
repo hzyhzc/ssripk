@@ -1,4 +1,4 @@
-name: Start build ssr+  two platforms
+name: Start build ssr+
 
 on:
  workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Test ${{ matrix.arch }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
